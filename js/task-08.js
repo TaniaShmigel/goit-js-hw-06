@@ -14,7 +14,7 @@ function onFormSubmit(event) {
     event.preventDefault()
     const {email, password} = event.currentTarget.elements;
     if (email.value === "" || password.value === "") {
-        alert("Please fill out your email and password!")
+        return alert ("Please fill out your email and password!")
     }
     const formEl ={
        email: email.value,
